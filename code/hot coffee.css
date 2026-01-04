@@ -1,0 +1,33 @@
+.badge {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+}
+.coffee-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.coffee-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 40px rgba(201, 162, 77, 0.5);
+}
+
+.coffee-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+#hot-coffee h2 {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    color: aliceblue;
+    text-shadow: 0px 0px 2px orange;
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Corner</title>
+    <!-- Icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="home">
+   
+
+
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#home">
+                <img src="../Data/Dark Brown Vintage Retro Coffee Bean Product Badge Logo.png" alt="Coffee Corner"
+                    width="60" height="50" class=" logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#M" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">Menu</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Coffee Choices
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./hot coffee section.html" target="_blank">Hot Coffee</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./Cold coffee section.html" target="_blank">Cold
+                                    Coffee</a></li>
+                            <li><a class="dropdown-item" href="./Special coffee section.html" target="_blank">Special
+                                    Coffee</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#Contact">
+                            <i class="fas fa-phone me-2"></i>Contact</a>
+                    </li>
+                </ul>
+
+                 <form class="d-flex">
+                    <input class="form-control" list="datalistOptions" id="exampleDataList"
+                        placeholder="Type to search...">
+                    <datalist id="datalistOptions">
+<a href="./Cold coffee.html">    <option value="Cold Coffee"></option>    </a>
+                        <option value="Cappuccino">
+                        <option value="Caffè Latte">
+                    </datalist> <button class="btn btn-outline-success ms-1" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= BANNER ================= -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="./hot coffee section.html"><img src="../Data/banner.png" class="d-block w-100" alt="..."></a>
+            </div>
+            <div class="carousel-item">
+                <img src="../Data/Brown and white Modern Coffee Time Promotion Banner.png" class="d-block w-100"
+                    alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../Data/Brown Simple Minimalist Coffee Shop Promotion Banner.png" class="d-block w-100"
+                    alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- ================= HOT COFFEE SECTION ================= -->
+    <span id="M"> </span>
+    <span id="coffee1"><br><br><br></span>
+    <section class="d-flex justify-content-end">
+
+        <div id="hot" class="card mb-3 w-75 text-dark border-light">
+
+            <div class="row g-0 align-items-center">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">HOT COFFEE</h2>
+                        <p class="card-text text-dark">
+                            Hot coffee is prepared by brewing roasted coffee beans with hot water, giving a rich
+                            aroma and comforting warmth.
+                        </p>
+                        <figcaption class="blockquote-footer">
+                            Popular worldwide
+                        </figcaption>
+                        <a href="./hot coffee section.html" target="_blank">
+                            <button class="btn btn-sm btn-outline-dark float-start order-btn" data-name="Espresso"
+                                data-price="120"> More &rarr;
+
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="../Data/espresso-shot-coffee-1.jpeg" class="img-fluid rounded-end" alt="Espresso Coffee">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ================= COLD COFFEE SECTION ================= -->
+    <span id="coffee2"> <br><br><br></span>
+    <section>
+        <div id="cold" class="card mb-3 w-75 text-dark border-light">
+            <div class="row g-0 align-items-center">
+
+
+                <div class="col-md-4 text-center">
+                    <img src="../Data/Brown and White Coffee Time.png" class="img-fluid rounded-start" alt="Hot Coffee">
+                </div>
+
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title">COLD Coffee</h2>
+                        <p class="card-text">
+                            Cold coffee is a refreshing coffee beverage served chilled or with ice, perfect for warm
+                            weather.
+                        </p>
+                        <figcaption class="blockquote-footer">
+                            Fresh & energizing
+                        </figcaption>
+                        <a href="./Cold coffee.html" target="_blank">
+                            <button class="btn btn-sm btn-outline-dark float-start order-btn" data-name="Espresso"
+                                data-price="120"> More &rarr;
+
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ================= SPECIAL COFFEE SECTION ================= -->
+    <span id="coffee3"> <br><br><br>
+    </span>
+    <section class="d-flex justify-content-end">
+
+        <div id="special" class="card mb-3 w-75 border-light">
+
+            <div class="bg-overlay"></div>
+
+            <div class="row g-0 align-items-center">
+
+                <div class="col-md-8">
+                    <div class="card-body text-white">
+                        <h2 class="card-title">SPECIAL COFFEE</h2>
+                        <p class="card-text">
+                            Special coffee is made using high-quality coffee beans, unique brewing
+                            methods, or special ingredients that enhance flavor and aroma.
+                        </p>
+                        <figcaption class="blockquote-footer text-light">
+                            Popular worldwide
+                        </figcaption>
+                        <a href="./Special coffee section.html" target="_blank">
+                            <button class="btn btn-sm btn-outline-light float-start order-btn" data-name="Espresso"
+                                data-price="120"> More &rarr;
+
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <img src="../Data/Brown and Black Simple Coffee Quotes Instagram Post.png"
+                        class="img-fluid rounded-end" alt="Special Coffee">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ================= FOOTER SECTION ================= -->
+
+    <footer class="bg-dark text-light pt-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- About Us -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase">Coffee Corner</h5>
+                    <p>
+                        Coffee Corner is your go-to place for freshly brewed coffee,
+                        handcrafted beverages, and cozy moments. We serve quality
+                        with every cup.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="./index.html" class="text-light text-decoration-none">Home</a>
+                        </li>
+                        <li>
+                            <button class="btn btn-link text-light text-decoration-none p-0" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                Menu
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#coffee1" class="text-light text-decoration-none">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li>Fresh Brewed Coffee</li>
+                        <li>Cold Coffee & Shakes</li>
+                        <li>Snacks & Desserts</li>
+                        <li>Takeaway & Delivery</li>
+                        <li>Catering Services</li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div id="Contact" class="col-md-3 mb-4">
+                    <h5 class="text-uppercase">Contact Us</h5>
+                    <a class="mb-" href="https://share.google/iZvY8CLfVoQs7OlbF" target="_blank">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        MG Road, Pune, India
+                    </a>
+                    <br>
+                    <a class="mb-1" href="tel:+919371570919" target="_blank">
+                        <i class="fas fa-phone me-2"></i>
+                        +91 9371570919
+                    </a>
+                    <br>
+                    <a class="mb-3" href="tomail:kadamaniket810@gmail.com" target="_blank">
+                        <i class="fas fa-envelope me-2"></i>
+                        coffeecorner@gmail.com
+                    </a>
+
+                    <h6 class="text-uppercase">Follow Us</h6>
+                    <a href="https://www.facebook.com/" class="text-light me-3 fs-5"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="text-light me-3 fs-5"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/" class="text-light me-3 fs-5"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/aniket-kadam-018986354" target="_blank" text-light fs-5><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bg-black text-center py-3 mt-3">
+            © 2026 Coffee Corner | Designed & Developed by <strong>Aniket Kadam</strong>
+        </div>
+    </footer>
+    <div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel"> <a class="navbar-brand" href="#">
+                    <img src="../Data/Dark Brown Vintage Retro Coffee Bean Product Badge Logo.png" alt="Coffee Corner"
+                        width="60" height="50" class=" logo">
+                </a>
+                Our Coffee Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <!-- Coffee Menu-->
+
+            <div class="container-fluid">
+
+                <h5 class="text-center text-uppercase mb-3 fw-bold"> Menu Coffee</h5>
+
+                <div class="list-group shadow-sm shadow">
+                    <div
+                        class="list-group-item d-flex justify-content-between text-decoration-none fw-bolder  bg-light p-4">
+                        <a href="./hot coffee section.html" style="color: #000;text-shadow:none;" target="_blank">Hot
+                            Coffee</a>
+                    </div>
+                    <div class="list-group-item d-flex justify-content-between text-decoration-none fw-bold p-4">
+                        <a href="./Cold coffee.html" style="color: #000; ; text-shadow: none;" target="_blank">Cold
+                            Coffee</a>
+                    </div>
+                    <div
+                        class="list-group-item d-flex justify-content-between text-decoration-none fw-bolder  bg-light p-4">
+                        <a href="Special coffee section.html" style="color: #000; text-shadow:none; "
+                            target="_blank">Special
+                            Coffee</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

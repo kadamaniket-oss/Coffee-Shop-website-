@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Corner</title>
+
+    <!-- Icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="hot coffee.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="./index.html">
+                <img src="../Data/Dark Brown Vintage Retro Coffee Bean Product Badge Logo.png" alt="Coffee Corner"
+                    width="60" height="50" class=" logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./index.html" target="_parent">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#M" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight">Menu</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                             Coffee Choices
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./hot coffee section.html">Hot Coffee</a></li>
+                            <li><a class="dropdown-item" href="#">Cold Coffee</a></li>
+                            <li><a class="dropdown-item" href="./Special coffee section.html">Special Coffee</a></li>
+                        </ul>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link active" href="#Contact">
+                            <i class="fas fa-phone me-2"></i>Contact</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control" list="datalistOptions" id="exampleDataList"
+                        placeholder="Type to search...">
+                    <datalist id="datalistOptions">
+                        <option value="Classic Cold Coffee">
+                        <option value="Brew Cold Coffee">
+                        <option value="Affogato">
+                        <option value="Frappuccino">
+                        <option value="Iced Coffee">
+                        <option value="Coffee Frappe">
+                        <option value="Cold Mocha">
+                    </datalist> <button class="btn btn-outline-success ms-1" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!-- ================= CARD COFFEE SECTION ================= -->
+
+
+    <section class="container my-5 mt-5" id="cold-coffee">
+        <h2 class="text-center mb-4 text-uppercase">
+            <br>Cold Coffee
+        </h2>
+
+        <div class="row g-4">
+
+            <!-- Classic Cold Coffee -->
+            <div class="col-md-4">
+                <div class="card coffee-card h-100 shadow">
+                    <img src="../Data/Cold-Coffee.png" class="card-img-top" alt="Cold Coffee">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Cold Coffee</h5>
+                        <p class="card-text">
+                            Chilled coffee blended with milk and sugar for a refreshing taste.
+                        </p>
+                        <div class="mt-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+
+                            <button class="btn btn-sm btn-outline-dark float-end order-btn"
+                                data-name="Classic Cold Coffee" data-price="140">
+                                Order Now
+                            </button>
+                        </div>
+                        <span class="badge bg-warning text-dark">₹140</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Iced Coffee -->
+            <div class="col-md-4">
+                <div class="card coffee-card h-100 shadow">
+                    <img src="../Data/iced-coffee.png" class="card-img-top" alt="Iced Coffee">
+                    <div class="card-body">
+                        <h5 class="card-title">Iced Coffee</h5>
+                        <p class="card-text">
+                            Fresh brewed coffee served over ice with a bold, smooth flavor.
+                        </p>
+                        <div class="mt-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+
+                            <button class="btn btn-sm btn-outline-dark float-end order-btn" data-name="Iced Coffee"
+                                data-price="150">
+                                Order Now
+                            </button>
+                        </div>
+                        <span class="badge bg-warning text-dark">₹150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Coffee Frappe -->
+            <div class="col-md-4">
+                <div class="card coffee-card h-100 shadow">
+                    <img src="../Data/frappe.png" class="card-img-top" alt="Coffee Frappe">
+                    <div class="card-body">
+                        <h5 class="card-title">Coffee Frappe</h5>
+                        <p class="card-text">
+                            Thick, frothy cold coffee blended with ice and chocolate syrup.
+                        </p>
+                        <div class="mt-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+
+                            <button class="btn btn-sm btn-outline-dark float-end order-btn" data-name="Coffee Frappe"
+                                data-price="180">
+                                Order Now
+                            </button>
+                        </div>
+                        <span class="badge bg-warning text-dark">₹180</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row g-4 mt-2">
+
+            <!-- Mocha Cold Coffee -->
+            <div class="col-md-4">
+                <div class="card coffee-card h-100 shadow">
+                    <img src="../Data/Iced_Mocha_1.png" class="card-img-top" alt="Cold Mocha">
+                    <div class="card-body">
+                        <h5 class="card-title">Cold Mocha</h5>
+                        <p class="card-text">
+                            Cold coffee blended with chocolate for a rich mocha flavor.
+                        </p>
+                        <div class="mt-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+
+                            <button class="btn btn-sm btn-outline-dark float-end order-btn" data-name="Cold Mocha"
+                                data-price="170">
+                                Order Now
+                            </button>
+                        </div>
+                        <span class="badge bg-warning text-dark">₹170</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Brew Coffee -->
+            <div class="col-md-4">
+                <div class="card coffee-card h-100 shadow">
+                    <img src="../Data/brew coffee.png" class="card-img-top" alt="Brew Coffee">
+                    <div class="card-body">
+                        <h5 class="card-title">Brew Coffee</h5>
+                        <p class="card-text">
+                            Slowly brewed cold coffee with a smooth, natural, and refreshing taste.
+                        </p>
+                        <div class="mt-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+
+                            <button class="btn btn-sm btn-outline-dark float-end order-btn" data-name="Brew Coffee"
+                                data-price="160">
+                                Order Now
+                            </button>
+                        </div>
+                        <span class="badge bg-warning text-dark">₹160</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frappuccino -->
+            <div class="col-md-4">
+                <div class="card coffee-card h-100 shadow">
+                    <img src="../Data/frappuccino coffee.jpg" class="card-img-top" alt="Frappuccino">
+                    <div class="card-body">
+                        <h5 class="card-title">Frappuccino</h5>
+                        <p class="card-text">
+                            Blended iced coffee with milk, cream, and flavored syrup.
+                        </p>
+                        <div class="mt-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+
+                            <button class="btn btn-sm btn-outline-dark float-end order-btn" data-name="Frappuccino"
+                                data-price="190">
+                                Order Now
+                            </button>
+                        </div>
+                        <span class="badge bg-warning text-dark">₹190</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Affogato -->
+            <div class="col-md-4">
+                <div class="card coffee-card h-100 shadow">
+                    <img src="../Data/Affogato coffee.png" class="card-img-top" alt="Affogato">
+                    <div class="card-body">
+                        <h5 class="card-title">Affogato</h5>
+                        <p class="card-text">
+                            Hot espresso poured over cold vanilla ice cream for a rich dessert coffee.
+                        </p>
+                        <div class="mt-2">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+
+                            <button class="btn btn-sm btn-outline-dark float-end order-btn" data-name="Affogato"
+                                data-price="200">
+                                Order Now
+                            </button>
+
+                        </div>
+                        <span class="badge bg-warning text-dark">₹200</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER SECTION ================= -->
+
+    <footer class="bg-dark text-light pt-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- About Us -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase">Coffee Corner</h5>
+                    <p>
+                        Coffee Corner is your go-to place for freshly brewed coffee,
+                        handcrafted beverages, and cozy moments. We serve quality
+                        with every cup.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="./index.html" class="text-light text-decoration-none">Home</a>
+                        </li>
+                        <li>
+                            <button class="btn btn-link text-light text-decoration-none p-0" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+                                Menu
+                            </button>
+                        </li>
+                        <li>
+                            <a href="#cold-coffee" class="text-light text-decoration-none">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="text-uppercase">Our Services</h5>
+                    <ul class="list-unstyled">
+                        <li>Fresh Brewed Coffee</li>
+                        <li>Cold Coffee & Shakes</li>
+                        <li>Snacks & Desserts</li>
+                        <li>Takeaway & Delivery</li>
+                        <li>Catering Services</li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div id="Contact" class="col-md-3 mb-4">
+                    <h5 class="text-uppercase">Contact Us</h5>
+
+                    <p class="mb-1">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        MG Road, Pune, India
+                    </p>
+
+                    <p class="mb-1">
+                        <a href="tel:+919371570919" class="text-light text-decoration-none">
+                            <i class="fas fa-phone me-2"></i>
+                            +91 9371570919
+                        </a>
+                    </p>
+
+                    <p class="mb-3">
+                        <a href="mailto:kadamaniket810@gmail.com" class="text-light text-decoration-none">
+                            <i class="fas fa-envelope me-2"></i>
+                            coffeecorner@gmail.com
+                        </a>
+                    </p>
+
+                    <h6 class="text-uppercase">Follow Us</h6>
+                    <a href="https://www.facebook.com/" class="text-light me-3 fs-5"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/" class="text-light me-3 fs-5"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/" class="text-light me-3 fs-5"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/aniket-kadam-018986354" target="_blank"
+                        class="text-light fs-5">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bg-black text-center py-3 mt-3">
+            © 2026 Coffee Corner | Designed & Developed by <strong>Aniket Kadam</strong>
+        </div>
+    </footer>
+
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel"> <a class="navbar-brand" href="#">
+                    <img src="../Data/Dark Brown Vintage Retro Coffee Bean Product Badge Logo.png" alt="Coffee Corner"
+                        width="60" height="50" class=" logo">
+                </a>
+                Our Coffee Menu</h5> <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+            <!-- Cold Coffee -->
+            <div class="container-fluid mb-4">
+                <h5 class="text-center text-uppercase fw-bold mb-3">Cold Coffee</h5>
+
+                <div class="list-group shadow-sm">
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Classic Cold Coffee</span>
+                        <span class="badge bg-dark rounded-pill">₹140</span>
+                    </div>
+
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Iced Coffee</span>
+                        <span class="badge bg-dark rounded-pill">₹150</span>
+                    </div>
+
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Coffee Frappe</span>
+                        <span class="badge bg-dark rounded-pill">₹180</span>
+                    </div>
+
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Cold Mocha</span>
+                        <span class="badge bg-dark rounded-pill">₹170</span>
+                    </div>
+
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Cold Brew Coffee</span>
+                        <span class="badge bg-dark rounded-pill">₹160</span>
+                    </div>
+
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Frappuccino</span>
+                        <span class="badge bg-dark rounded-pill">₹190</span>
+                    </div>
+
+                    <div class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Affogato</span>
+                        <span class="badge bg-dark rounded-pill">₹200</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="bg-success">
+                                <th>Coffee</th>
+                                <th>Price</th>
+                                <th>Qty</th>
+                                <th>Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="cartItems">
+                            <!-- Items added dynamically -->
+                        </tbody>
+                    </table>
+
+                    <h5 class="text-end p-2">
+                        Grand Total: ₹<span id="grandTotal">0</span>
+                    </h5>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                    <button class="btn btn-success">Checkout</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let cart = [];
+
+        const cartItemsEl = document.getElementById('cartItems');
+        const grandTotalEl = document.getElementById('grandTotal');
+
+        document.querySelectorAll('.order-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const name = button.dataset.name;
+                const price = parseInt(button.dataset.price);
+
+                const existingItem = cart.find(item => item.name === name);
+
+                if (existingItem) {
+                    existingItem.qty++;
+                } else {
+                    cart.push({ name, price, qty: 1 });
+                }
+
+                updateCart();
+                new bootstrap.Modal(document.getElementById('cartModal')).show();
+            });
+        });
+
+        function updateCart() {
+            cartItemsEl.innerHTML = '';
+            let grandTotal = 0;
+
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.qty;
+                grandTotal += itemTotal;
+
+                cartItemsEl.innerHTML += `
+                <tr>
+                    <td>${item.name}</td>
+                    <td>₹${item.price}</td>
+                    <td>${item.qty}</td>
+                    <td>₹${itemTotal}</td>
+                    <td>
+                        <button class="btn btn-sm btn-danger" onclick="removeItem(${index})">
+                            ✕
+                        </button>
+                    </td>
+                </tr>
+            `;
+            });
+
+            grandTotalEl.textContent = grandTotal;
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+    </script>
+
+
+
+</body>
+
+</html>
